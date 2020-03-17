@@ -1,29 +1,38 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:Todoy/widgets/tasks_list.dart';
 
 class TasksScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.deepPurple,
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.deepPurple,
+        child: Icon(
+          Icons.add,
+          color: Colors.white,
+        ),
+        onPressed: () {},
+      ),
       body: SafeArea(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Container(
               padding:
-                  EdgeInsets.only(top: 30, bottom: 30, left: 19, right: 30),
+                  EdgeInsets.only(top: 19, bottom: 29, left: 19, right: 29),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   CircleAvatar(
                     child: Icon(
                       Icons.list,
-                      size: 35,
+                      size: 33,
                       color: Colors.deepPurple,
                     ),
                     backgroundColor: Colors.white,
-                    radius: 35,
+                    radius: 33,
                   ),
                   SizedBox(
                     height: 19,
@@ -33,14 +42,18 @@ class TasksScreen extends StatelessWidget {
                     style: TextStyle(
                         fontSize: 39,
                         fontFamily: "FiraCode",
-                        fontStyle: FontStyle.italic),
+                        fontStyle: FontStyle.italic,
+                        color: Colors.white),
                   ),
                   SizedBox(
-                    height: 19,
+                    height: 23,
                   ),
                   Text(
                     " 12 Tasks",
-                    style: TextStyle(fontFamily: "FiraCode", fontSize: 19),
+                    style: TextStyle(
+                        fontFamily: "FiraCode",
+                        fontSize: 19,
+                        color: Colors.white),
                   ),
                   SizedBox(height: 9),
                 ],
@@ -48,6 +61,7 @@ class TasksScreen extends StatelessWidget {
             ),
             Expanded(
               child: Container(
+                padding: EdgeInsets.symmetric(horizontal: 19),
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
@@ -55,6 +69,7 @@ class TasksScreen extends StatelessWidget {
                     topRight: Radius.circular(19),
                   ),
                 ),
+                child: TasksList(),
               ),
             ),
           ],
