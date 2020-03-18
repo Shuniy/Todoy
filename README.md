@@ -1,16 +1,14 @@
-# todoy
+# Todoy ✓
 
-A Todo App.
+![Screenshot 1](images/ScreenShot1.png)
 
-## Getting Started
+![Screenshot 2](images/ScreenShot2.png)
 
-This project is a starting point for a Flutter application.
+![Screenshot 3](images/ScreenShot3.png)
 
-A few resources to get you started if this is your first Flutter project:
+![Screenshot 4](images/ScreenShot4.png)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+![Screenshot 5](images/ScreenShot5.png)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Screenshot 6](images/ScreenShot6.png)
+
